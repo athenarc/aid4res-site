@@ -111,11 +111,31 @@ nav > div > ul > li:last-child {
 .table-light th, .table-light td, .table-light thead th, .table-light tbody + tbody{
 	border-color: black;
 }
+
+.table th, .table td{
+	vertical-align: middle;
+}
+
+.table{
+	font-family: 'Roboto', sans-serif;
+	font-size: 11pt;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
 @media (max-width: 991px) {
 
 	.nav-item{
 		padding-right: 0;
 		border-right: none;
+	}
+
+	.nav-link{
+		padding: 0 !important;
+	}
+
+	.nav-item{
+		margin-top : 0.75rem !important;
 	}
 }
 
@@ -123,5 +143,19 @@ nav > div > ul > li:last-child {
 @media (max-width: 1200px) {
 	.header-container{
 		margin-top: 5%;
+	}
+
+	.navbar-nav{
+		margin-top: 2% !important;
+	}
+}
+
+
+@media (max-width: 380px) {
+	.table th, .table td{
+		padding: 0.35rem;
+		font-size: 9pt;
+		/*position: relative;
+		display: block;*/
 	}
 }
